@@ -1,0 +1,267 @@
+html {
+  background-image: url("immagini/background.JPG");
+}
+
+
+
+body {
+  display: flex;
+  height: 100%;
+  margin: 0;
+  padding:8px;
+
+}
+
+body, input, button, textarea {
+    font-family: var(--font);
+}
+
+
+
+main {
+    max-width: 960px;
+    width: 100%;
+    background: var(--foreground);
+    border-radius: 10px;
+    display: flex;
+    justify-content: left;
+    box-shadow: 0px 0px 7px rgba(0,0,0,0.08);
+    margin: auto;
+}
+
+main .main_left {
+    width: 40%;
+   background: url(../assets/intro2.png) center;
+   background-size: cover;
+   border-radius: 10px 0 0 10px;
+   background-image: url("immagini/Foto_pro.JPG");
+}
+.main_left h1 {
+  color : white;
+  text-align: center;
+
+}
+.main_left h4{
+  color:white;
+  text-align: center;
+  margin: 0;
+}
+
+
+main .main_right {
+    width: 60%;
+    padding-bottom: 20px;
+    text-align: center;
+    min-height: 500px;
+    background-color: white;
+}
+
+main.login .main_right {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 0;
+    flex-direction: column;
+    min-height: 500px;
+}
+
+
+
+main h1 {
+    color: var(--hl_text);
+    font-weight: 900;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+main .error {
+    padding: 4px 10px;
+    background: #ffe2e2;
+    border-radius: 7px;
+    color: #fa1c2c;
+    margin: 5px;
+    font-size: 12px;
+    display: inline-block;
+}
+
+
+label {
+    font-size: 14px;
+}
+
+form {
+    max-width: 387px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+
+input[type=text], input[type=password], #upload {
+    background: var(--background);
+    padding: 8px;
+    border: 2px solid var(--background);
+    color: var(--text);
+    border-radius: 4px;
+    transition: border ease 0.3s;
+}
+
+input[type=submit] {
+    background: #2e1061;
+    border: 0;
+    border-radius: 4px;
+    padding: 8px;
+    color: var(--foreground);
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    text-align: center;
+    font-size: 14px;
+}
+
+input[type=submit]:hover {
+    background: #fa1c2c;
+}
+
+input[type=submit]:disabled, input[type=submit]:disabled:hover, input[type=submit]:disabled:active {
+    background: #7e838d;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    border: 2px solid var(--hl_text);
+    outline-width: 0;
+}
+
+main input {
+    width: 100%;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.allow, .remember {
+    margin: 0 10px 25px;
+}
+
+.allow > div, .remember > div {
+    display: inline-block;
+}
+
+.allow > div:first-child, .remember > div:first-child {
+    vertical-align: middle;
+}
+
+.allow input, .remember input {
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    -webkit-appearance: none;
+    /*background: #d9d9d9;*/
+    border-radius: 4px;
+    position: relative;
+    outline-width: 0 !important;
+    border: 2px solid #d9d9d9;
+    margin-bottom: 2px;
+}
+
+.allow input:checked:before, .remember input:checked:before {
+    opacity: 1;
+}
+
+
+.allow input:before, .remember input:before {
+    content: '';
+    opacity: 0;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 2px;
+    background: #7e838d;
+    top: 2px;
+    left: 2px;
+    transition: opacity ease 0.2s;
+}
+
+.names {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.names > div {
+    margin: 0 10px;
+}
+
+main form > div {
+    margin: 5px 10px
+}
+
+#upload_original {
+    display: none;
+}
+
+#upload {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#upload .file_name {
+    background: url(../assets/upload.svg) left center no-repeat;
+    padding-left: 25px;
+    padding-right: 3px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+#upload .file_size {
+    font-size: 12px;
+    color: #9da2ab;
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
+form span {
+    opacity: 0;
+    font-size: 11px;
+    transition: opacity 0.3s ease;
+}
+
+form > div, .names > div {
+    text-align: right;
+}
+
+form > div *, .allow, .remember {
+    text-align: left;
+}
+
+.errorj label {
+    color: #fa1c2c;
+}
+
+.errorj span {
+    opacity: 1;
+    font-size: 11px;
+    color: #fa1c2c;
+}
+
+.errorj input, .errorj #upload {
+    border-color: #fa1c2c;
+}
+
+main .signup {
+    font-size: 14px;
+}
+
+main .signup a {
+    text-decoration: none;
+    color: #2e1061;
+}
+
+main .signup a:hover {
+    color: #fa1c2c;
+}

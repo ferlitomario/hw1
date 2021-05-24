@@ -1,0 +1,297 @@
+body {
+    margin: 0;
+    font-family: 'Lora',serif;
+    background-color:white;
+
+
+}
+
+@media (max-width: 500px) {
+    body {
+      width: 680px;
+    }
+  }
+
+header {
+    background-image: url(immagini/Foto_pro.JPG);    
+    color: white;
+    position: relative;
+    height: 500px;
+  background-position: center;
+  font-size: 20px;
+  display: flex;
+}
+
+@media (max-width:500px){
+    header{
+       height: 300px;
+       line-height: 1.2;
+    }
+}
+
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.intestazione{
+    height: 30px;
+   position: relative;
+    color:white;
+    font-weight: bolder;
+   text-align: right;
+   font-size: 25px;
+
+
+}
+.intestazione a:hover{
+    background-color: black;
+    color: white;
+
+}
+
+.intestazione a {
+    border:2px solid black;
+   height: 40px;
+   padding: 5px;
+   border-radius: 10px;
+   font-size: 20px;
+   background-color: white;
+   color: black;
+
+}
+
+
+.links a{
+    color:white;
+    border: 3px solid black;
+    border-radius: 10px;
+   font-weight:bolder;
+   font-size: 30px;
+   display: flex;
+   padding: 5px;
+}
+
+
+.links {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    align-items: flex-start;
+    margin-left: 20px;
+    justify-content: space-between;
+
+}
+
+.links a:hover {
+    background-color: white;
+    color:black;
+
+}
+
+
+#logo {
+    font-size: 50px;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-family: 'Chango', cursive;
+    position: relative;
+    top: 0;
+}
+
+
+#Introduzione {
+   margin-top: 100px;
+    margin-bottom: 150px;
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    font-size: 40px;
+}
+
+article {
+
+    justify-content: center;
+    background-color:white;
+}
+
+@media (max-width: 500px){
+    article {
+        margin-left: 0;
+        margin-right: 0;
+       justify-content: left;
+       align-items: center;
+    }
+}
+
+.scritta1{
+    background-color: lightskyblue;
+    height: 170px;
+    border: 3px solid black;
+    width: 590px;
+    border-radius: 60px;
+    margin-bottom: 50px;
+}
+
+@media(max-width:500px){
+    .scritta1{
+        width: 400px;
+        height: 200px;
+    }
+}
+
+.scritta2{
+    background-color: wheat;
+    height: 170px;
+    border: 3px solid black;
+    width: 590px;
+    border-radius: 60px;
+    margin-bottom: 30px;
+}
+
+@media(max-width:500px){
+    .scritta2{
+        width: 400px;
+        height: 250px;
+    }
+}
+
+.scritta3{
+    background-color: lavenderblush;
+    height: 170px;
+    border: 3px solid black;
+    width: 590px;
+    border-radius: 60px;
+    margin-bottom: 30px;
+}
+
+@media(max-width:500px){
+    .scritta3{
+        width: 400px;
+        height: 200px;
+    }
+}
+
+.scritta4{
+    background-color:saddlebrown;
+    height: 170px;
+    border: 3px solid black;
+    width: 590px;
+    border-radius: 60px;
+    margin-bottom: 50px;
+}
+
+
+@media(max-width:500px){
+    .scritta4{
+        width: 400px;
+        height: 200px;
+    }
+}
+
+
+
+
+section a{
+    font-size: 30px;
+    color:black;
+    font-weight: normal;
+    text-align: center;
+    border: 3px solid black;
+    width: 150px;
+   display: inline-block;
+   border-radius: 50px;
+   background-color: white;
+   margin-top: 10px;
+   margin-bottom: 50px;
+
+
+}
+
+section a:hover {
+    background-color: lightgray;
+    color:black;
+}
+
+section h3 {
+
+   bottom: 40px;
+   position: relative;
+}
+
+
+section {
+    height: 400px;
+    width: 590px;
+    background-color: white;
+   display: inline-block;
+   justify-content: center;
+   margin-left: 28%;
+   text-align: center;
+   margin-top: 60px;
+
+}
+
+@media (max-width: 500px){
+    section{
+        margin-right: 0;
+        width: 400px;
+    }
+}
+
+
+section img {
+    width: 590px;
+    height: 400px;
+    border: 3px solid black;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+@media (max-width:500px){
+    section img{
+        width: 300px;
+        height: 200px;
+    }
+}
+
+
+footer {
+    background-color: black;
+    color: gold;
+    text-align: center;
+    padding: 60px;
+
+}
+
+
+a{
+    cursor: pointer;
+}
+
+
+#menu {
+    display: none;
+  }
+
+  #menu div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+  }
+
+  @media (max-width: 500px) {
+    .links {
+      display: none;
+
+    }
+
+    #menu {
+      display: block;
+    }
